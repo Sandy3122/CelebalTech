@@ -1,0 +1,12 @@
+{
+  "name": "module-1",
+  "version": "1.0.0",
+  "description": "Node.js Basics",
+  "main": "EventEmitter.js",
+  "scripts": {
+    "server" : "EventEmitter.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sandeep Seeram",
+  "license": "ISC"
+}
