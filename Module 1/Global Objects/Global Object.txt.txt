@@ -1,0 +1,4 @@
+In Node.js, there are several global objects and
+functions available by default without the need for explicit import or require statements.
+These global objects and functions provide commonly used functionalities and utilities.
+Here are some of the important global objects in Node.js: 

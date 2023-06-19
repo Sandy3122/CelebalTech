@@ -4,9 +4,13 @@
   "description": "Node.js Basics",
   "main": "EventEmitter.js",
   "scripts": {
-    "server" : "EventEmitter.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sandeep Seeram",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.7",
+    "yargs": "^17.7.2"
+  }
 }
