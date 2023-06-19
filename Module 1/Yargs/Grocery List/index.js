@@ -13,10 +13,19 @@ if(command === "add"){
     if(item && price){
         commands.add(item, price);
     }
-}else if(command === "remove"){
-
-}else if(command === "delete"){
-
+}
+else if(command === "remove"){
+    if(item){
+        commands.remove(item);
+    }
+}
+else if(command === "print"){
+    commands.print(item)
+}
+else if(command === "priceOf"){
+    if(item){
+        commands.priceOf(item)
+    }
 }else{
     console.log('Invalid Command,');
 }
