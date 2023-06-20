@@ -2,15 +2,24 @@
   "name": "module-1",
   "version": "1.0.0",
   "description": "Node.js Basics",
-  "main": "EventEmitter.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
   },
   "author": "Sandeep Seeram",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "fetch": "^1.1.0",
     "inquirer": "^9.2.7",
+    "install": "^0.13.0",
+    "multer": "^1.4.5-lts.1",
+    "node-fetch": "^2.6.6",
     "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }

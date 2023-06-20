@@ -73,7 +73,7 @@ const priceOf = item => {
     let index = groceryList.findIndex((x) => x.item === item);
     
     if(index !== -1){
-        console.log(`Price of ${item} Is ${groceryList[index].price}Rs.`)
+        console.log(`Price of ${item} Is ${groceryList[index].price}   Rs.`)
     }else{
         console.log(`${item} Not Found`);
     }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Server In Express Framework</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <form method="GET" action="http://localhost:8000/submit">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name"><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="Age"><br><br>
+            <label for="hobbies">Hobbies:</label>
+            <textarea rows="4" cols="20" id="hobbies" name="Hobbies"></textarea><br><br>
+            <input type="submit" class="btn" value="Submit">
+        </form>
+
+        <!-- <h2>Form Data</h2>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td id="nameData"></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td id="ageData"></td>
+            </tr>
+            <tr>
+                <td>Hobbies:</td>
+                <td id="hobbiesData"></td>
+            </tr>
+        </table> -->
+    </section>
+
+    <!-- <script>
+        function submitForm(event) {
+            event.preventDefault();
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var hobbies = document.getElementById("hobbies").value;
+          
+            document.getElementById("nameData").innerText = name;
+            document.getElementById("ageData").innerText = age;
+            document.getElementById("hobbiesData").innerText = hobbies;
+          }
+          
+    </script> -->
+</body>
+
+</html>
