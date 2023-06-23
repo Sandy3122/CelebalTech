@@ -2,11 +2,3 @@
 node_modules
 package-lock.json
 package.json
-
-./Module 1/node_modules
-./Module 1/package-lock.json
-./Module 1/package.json
-
-./Module 2/node_modules
-./Module 2/package-lock.json
-./Module 2/package.json
