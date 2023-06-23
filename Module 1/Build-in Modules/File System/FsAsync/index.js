@@ -1,6 +1,6 @@
 //Callbacks
 /*
-We Pass the in a function as an argunment - a callback that gets called when that task completed.
+We Pass the callback in a function as an argunment - a callback that gets called when that task completed.
 The callback has a argument that tells you wheather the operation completed successfully.
 Asynchronous is all about callbacks
 */

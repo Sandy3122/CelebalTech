@@ -19,13 +19,13 @@
 */
 
 //Example 1
-// var fs = require("fs");
-// fs.readFile("ReplCommands.txt", (err, data) =>{     //readFile is an asynchronous function
-//     if(err) console.error(err);
-//     console.log(data.toString())
-// })
+var fs = require("fs");
+fs.readFile("ReplCommands.txt", (err, data) =>{     //readFile is an asynchronous function
+    if(err) console.error(err);
+    console.log(data.toString())
+})
 
-// console.log("Program Ended");
+console.log("Program Ended");
 
 
 
