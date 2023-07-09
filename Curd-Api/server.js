@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 dotenv.config();
 
 //Importing Routes
-const userRoutes = require("./routes/userRoutes.js")
+const userRoutes = require("./server/routes/userRoutes")
 
 //Route Middlewares
 app.use("/api/users", userRoutes);
@@ -42,9 +42,9 @@ mongoose.connect(process.env.MongoDB_URI,
   });
 
 
-const PORT = process.env.PORT || 5000
-app.listen(PORT, () => {
-  console.log(`${PORT} server @ http://localhost:5000`)
+const port = process.env.PORT || 5000
+app.listen(port, () => {
+  console.log(`Server Satrted @ http://localhost:${port}`)
 });
 
 

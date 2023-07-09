@@ -1,0 +1,90 @@
+const express = require('express');
+const app = express();
+
+app.use(express.json());
+
+// Data storage variable
+let books = [];
+
+// GET all books
+app.get('/books', (req, res) => {
+  res.json(books);
+});
+
+// GET a specific book by ID
+app.get('/books/:id', (req, res) => {
+  try {
+    const bookId = req.params.id;
+    const book = books.find((book) => book.id === bookId);
+
+    if (book) {
+      res.json(book);
+    } else {
+      res.status(404).json({ message: 'Book not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
+
+// POST a new book
+app.post('/books', (req, res) => {
+  try {
+    const { id, title, author } = req.body;
+
+    if (!id || !title || !author) {
+      res.status(400).json({ message: 'Please provide all required fields' });
+      return;
+    }
+
+    const newBook = { id, title, author };
+    books.push(newBook);
+
+    res.status(201).json({ message: 'Book created successfully', book: newBook });
+  } catch (error) {
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
+
+// PUT update a book
+app.put('/books/:id', (req, res) => {
+  try {
+    const bookId = req.params.id;
+    const { title, author } = req.body;
+
+    const bookIndex = books.findIndex((book) => book.id === bookId);
+
+    if (bookIndex !== -1) {
+      books[bookIndex].title = title || books[bookIndex].title;
+      books[bookIndex].author = author || books[bookIndex].author;
+      res.json({ message: 'Book updated successfully', book: books[bookIndex] });
+    } else {
+      res.status(404).json({ message: 'Book not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
+
+// DELETE a book
+app.delete('/books/:id', (req, res) => {
+  try {
+    const bookId = req.params.id;
+    const bookIndex = books.findIndex((book) => book.id === bookId);
+
+    if (bookIndex !== -1) {
+      const deletedBook = books.splice(bookIndex, 1);
+      res.json({ message: 'Book deleted successfully', book: deletedBook[0] });
+    } else {
+      res.status(404).json({ message: 'Book not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
+
+// Start the server
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});

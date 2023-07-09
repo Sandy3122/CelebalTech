@@ -1,0 +1,31 @@
+/*
+1. Scope
+2. Readdaigning And Redeclaration
+3. Hosting (When you access a variable before declaring it)
+
+**** Scope ****
+1. Block Scope  
+2. Functional Scope  
+3. Global Scope
+
+//Reassign
+1. variable with var or let, you can reassign a new value to the variable in your programming flow. It is possible if the variable is accessible to assign a value. 
+2. But with const, you can't reassign a new value at all.
+
+//Redeclaration
+1. Var  -   YES
+2. Let  -   NO
+3. Const    -   NO  
+
+
+//Hosting
+1. With var in non-strict mode, the variable will have an undefined value
+2. In strict mode, you will get a ReferenceError that the variable is not declared.
+3. With let and const, if you try to access a variable before declaring, you will always get a ReferenceError.
+
+
+//IMPORTANT
+1. Don't use var anymore.
+2. Use let or const.
+3. Use const more often. Use let when you need to reassign another value to a variable.
+4. Don't try to access a variable without declaring it.
