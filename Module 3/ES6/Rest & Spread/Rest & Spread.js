@@ -14,6 +14,22 @@ const sum = (...numbers) => {
   console.log(sum(1, 2, 3)); // 6
   
   // Spread operator
-  const numbers = [4, 5, 6];
-  console.log(...numbers); // 4 5 6
-  
+const numbers = [4, 5, 6];
+console.log(...numbers); // 4 5 6
+
+const arr1 = [1,2,3,4]
+const arr2 = [...arr1, 5,6,7,8]
+console.log(arr2)
+
+
+const obj1 = {
+  name :"Seeram Sandeep",
+  age : 22
+}
+
+const obj2 = {
+  ...obj1,
+  mail : "seeram@gmail.com",
+  ranch : "Mechanical"
+}
+console.log(obj2)
