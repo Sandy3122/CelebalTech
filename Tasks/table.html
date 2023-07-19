@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">    <title>Table</title>
+    <style>
+      .my-table {
+        border: 2px solid red;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .my-table th{
+        color: white;
+      }
+      .my-table th, .my-table td {
+        padding: 10px;
+        text-align: center;
+      }
+      .my-table tr:nth-child(odd) {
+        background-color: pink;
+      }
+      .my-table tr:nth-child(even) {
+        background-color: orange;
+      }
+      
+      .my-table i {
+        color: black;
+        cursor: pointer;
+      }
+      
+      .my-table th:first-child,
+      .my-table td:first-child {
+        text-align: left;
+      }
+
+      
+    </style>
+</head>
+<body>
+    <table class="my-table" border="2">
+        <tr>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>Cost</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Rayudu Hema</td>
+          <td>$50</td>
+          <td><i class="fas fa-edit"></i></td>
+          <td><i class="fas fa-trash-alt"></i></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>rayudu Satya Mounika</td>
+          <td>$75</td>
+          <td><i class="fas fa-edit"></i></td>
+          <td><i class="fas fa-trash-alt"></i></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Rayudu Mounika Devi</td>
+          <td>$100</td>
+          <td><i class="fas fa-edit"></i></td>
+          <td><i class="fas fa-trash-alt"></i></td>
+        </tr>
+      </table>
+      
+
+</body>
+</html>

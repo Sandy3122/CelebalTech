@@ -1,0 +1,33 @@
+Description: Implemented authentication mechanisms in a web application to verify the identity of users. 
+Explored various types of authentication, including:
+
+Authentication : 
+What do you meant by authentication ?
+Authentication is the process of verifying a user or device before allowing access to a system or protected resources.
+
+What do you meant by Authorization ?
+Authorization, on the other hand, is the process of granting or denying access rights and permissions to authenticated users or entities.
+
+
+
+Types Of Authentication :
+1. Username and Password: Users provide a unique username and password combination for authentication.
+2. Token-based Authentication: Utilized tokens, such as JSON Web Tokens (JWT), to authenticate and authorize users by exchanging and verifying tokens.
+3. OAuth: Integrated OAuth protocol to enable third-party authentication, allowing users to sign in using existing accounts from platforms like Google, Facebook, or Twitter.
+4. Two-Factor Authentication (2FA): Implemented an additional layer of security by requiring users to provide a second authentication factor, such as a unique code sent to their mobile device.
+5. Biometric Authentication: Utilized biometric data, such as fingerprints or facial recognition, to authenticate users on devices with biometric sensors.
+
+These authentication methods enhance the security of web applications by ensuring only authorized users can access protected resources.
+
+
+
+
+
+
+Passwords :
+1. Implementing proper password strength controls such as password length, complexity, and topology.
+2. Implementing secure password recovery mechanisms.
+3. Storing passwords securely, which includes hashing passwords with a salt.
+4. Transmitting passwords only over TLS or other strong transport.
+5. Correctly implementing authentication and error messages that mitigate user ID and password enumeration.
+6. Must Preventing brute-force attacks.

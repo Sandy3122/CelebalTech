@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+    <style>
+        .parent {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            color: white;
+        }
+        .box {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+        .red {
+            background-color: red;
+            top: 0;
+            left: 0;
+        }
+        .green {
+            background-color: green;
+            top: 20px;
+            left: 20px;
+        }
+        .blue {
+            background-color: blue;
+            top: 40px;
+            left: 40px;
+        }
+        .yellow {
+            background-color: yellow;
+            top: 60px;
+            left: 60px;
+        }
+        .black {
+            background-color: black;
+            top: 80px;
+            left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Absolute</h1>
+    <div class="parent">
+        <div class="box red">1</div>
+        <div class="box green">2</div>
+        <div class="box blue">3</div>
+        <div class="box yellow">4</div>
+        <div class="box black">5</div>
+    </div>
+</body>
+</html>

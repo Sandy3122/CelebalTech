@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form1</title>
+    <style>
+        :root{
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        form {
+            border: 2px dotted black;
+            width: 55%;
+            padding: 20px;
+            margin: auto;
+            color: white;
+            background: linear-gradient(90deg, pink, skyblue);
+        }
+
+        .btn {
+            margin: 10px;
+            text-align: center;
+        }
+
+        table tr td {
+            margin: 8px;
+            padding: 10px;
+        }
+
+        table tr td input {
+            width: 50%
+        }
+    </style>
+</head>
+
+<body>
+    <form name="Register form" class="myform">
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td>
+                    <input type="text" name="First name" placeholder="Mony ">
+                </td>
+                <td>
+                    <span>(Max 50 characters Allowed)</span>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>Last Name</td>
+                <td>
+                    <input type="text" name="lastname" placeholder="Rayudu">
+                </td>
+                <td>
+                    <span>(Max 50 characters Allowed)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email ID</td>
+                <td>
+                    <input type="email" name="useremail" placeholder="mony@gmail.com">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>Mobile Number</td>
+                <td>
+                    <input type="number" name="mobile number" placeholder="9391******">
+                </td>
+                <td>
+                    <span>(10 digits Allowed)</span>
+                </td>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>Date Of Birth</td>
+                <td>
+                    <input type="date" name="user dob">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea name="address"></textarea>
+                </td>
+
+            </tr>
+
+
+            <tr>
+                <td>City</td>
+                <td>
+                    <input type="text" name="city" placeholder="Bangalore">
+                </td>
+                <td>
+                    <span>(Max 50 characters Allowed)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pin Code</td>
+                <td>
+                    <input type="number" name="pincode" placeholder="500001">
+                </td>
+                <td>
+                    <span>(Max 6 Numbers Allowed)</span>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>State</td>
+                <td>
+                    <input type="text" name="state" placeholder="AP">
+                </td>
+                <td>
+                    <span>(Max 50 characters Allowed)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Country</td>
+                <td>
+                    <input type="text" name="country" placeholder="India">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobbies</td>
+                <td>
+                    <input type="checkbox" name="hobbies" value="Drawing">Drawing
+                    <input type="checkbox" name="hobbies" value="Singing">Singing
+                    <input type="checkbox" name="hobbies" value="Sketching">sketching<br>
+                    <input type="checkbox" name="hobbies" value="Dancing">Dancing
+                    <input type="checkbox" name="hobbies" value="Others">Others
+                </td>
+                <td>
+                    <span>(Max 50 characters Allowed)</span><br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Qualification</td>
+                <td>
+                    <input type="checkbox" name="Qualifications">High School(10th)<br>
+                    <input type="checkbox" name="Qualification">Higher School(12th)<br>
+                    <input type="checkbox" name="Qualification">Graduation(Bachelors)<br>
+                    <input type="checkbox" name="Qualification">Post Graduation(Masters)<br>
+                    <input type="checkbox" name="Qualification">Phd
+                </td>
+
+            <tr>
+                <td>Courses Appiled For</td>
+                <td>
+                    <input type="radio" name="Courses">BCA(Bachelor of Computer Applications)<br>
+                    <input type="radio" name="Courses">B.Com(Bachelor of Commerce)<br>
+                    <input type="radio" name="Courses">B.Sc(Bachelor of Science)<br>
+                    <input type="radio" name="Courses">BA(Bachelor of Arts)<br>
+                    <input type="radio" name="Courses">MCA(Master of Computer Applications)<br>
+                    <input type="radio" name="Courses">M.Com(Master of Commerce)<br>
+                    <input type="radio" name="Courses">M.Sc(Master of Science)<br>
+                    <input type="radio" name="Courses">MA(Master of Arts)<br>
+                </td>
+
+        </table>
+        <div class="btn">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+</body>
+
+</html>

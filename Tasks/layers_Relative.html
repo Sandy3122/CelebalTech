@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+    <style>
+        .box {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            color: white;
+        }
+        .red {
+            background-color: red;
+            bottom: 0;
+            left: 0;
+        }
+        .green {
+            background-color: green;
+            bottom: 5rem;
+            left: 20px;
+        }
+        .blue {
+            background-color: blue;
+            top: -10em;
+            left: 40px;
+        }
+        .yellow {
+            background-color: yellow;
+            bottom: 15em;
+            left: 60px;
+        }
+        .black {
+            background-color: black;
+            top: -20em;
+            left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relative</h1>
+    <div class="parent">
+        <div class="box red">1</div>
+        <div class="box green">2</div>
+        <div class="box blue">3</div>
+        <div class="box yellow">4</div>
+        <div class="box black">5</div>
+    </div>
+</body>
+</html>
