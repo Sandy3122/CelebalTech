@@ -15,6 +15,7 @@ const Person = {
 console.log(Person)
 console.log(Person.myMail)
 
+
 //Destructuring
 const {myName, myAge, myMail} = Person;
 console.log(myName)

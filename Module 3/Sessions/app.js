@@ -48,5 +48,5 @@ const sessionChecker = app.use((req,res, next) => {
 
 
 
-app.set("port", 8080)
+app.set("port", 8000)
 app.listen(app.get("port"), () => console.log(`Server running at http://localhost:8080`))

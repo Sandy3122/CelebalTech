@@ -12,4 +12,4 @@ fs.readFile('read.txt', 'UTF-8' , (err, data) => {
     if(err) throw err;
     console.log(data);
 });
-console.log("Ater The Data"); //It will appear first in console
+console.log("After The Data"); //It will appear first in console

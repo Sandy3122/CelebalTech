@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 These options are used in the MongoDB Node.js driver to enhance functionality and ensure compatibility with newer MongoDB versions.
 
 */
-mongoose.connect("mongodb://localhost:27017/CelebalPractice", {
+mongoose.connect("mongodb://0.0.0.0:27017/CelebalPractice", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -16,3 +16,4 @@ mongoose.connect("mongodb://localhost:27017/CelebalPractice", {
     console.log("Connected to MongoDB Database"); // successful message when connected successfully with db
   })
   .catch((err) => console.log(`Not Connected To MongoDB : ${err}`));
+

@@ -20,4 +20,3 @@ function handleFileContents(error, contents) {
   
   // Usage: Call the asynchronous function with the callback
   readFileContents("example.txt", handleFileContents);
-  

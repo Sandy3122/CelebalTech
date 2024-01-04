@@ -5,6 +5,6 @@ print("Starting")
 time.sleep(5)
 
 for i in range(100):
-    pg.write("Hai")
+    pg.write("Call Cheyu")
     pg.press("Enter")
     

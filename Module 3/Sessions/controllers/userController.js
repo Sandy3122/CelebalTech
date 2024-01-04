@@ -61,18 +61,19 @@ router.get('/signup', (req,res) => {
     req.session.isAuth ? res.redirect("/home") : res.render("signup")
 });
 
-router.get('/signup', async(req, res) =>{
+router.post('/signup', async(req, res) =>{
     const {username, email, password} = req.body;
 
     let user = await userModel.findOne({email});
 
+    try{
+
     if(user){
-        res.send(`User with this email already exists <a href="/login">Go Back To Signup Page</a>`)
+        res.send(`User with this email already exists <a href="/signup">Go Back To Signup Page</a>`)
         console.log("User with this email already exists")
         return res.redirect("/home")
     }
 
-    try{
     const hashedPassword = await bcrypt.hash(password, 10);
 
     let newUser = new userModel({
@@ -81,6 +82,7 @@ router.get('/signup', async(req, res) =>{
         password: hashedPassword,
     })
 
+    
     await newUser.save();
     // res.status(200).send("User registered successfully");
     res.redirect("/login")

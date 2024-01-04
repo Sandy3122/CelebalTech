@@ -6,6 +6,17 @@ promise-based behavior to be written in a cleaner style and avoiding the need to
 
 1. simplify working with asynchronous code and Promises
 2. They provide a more synchronous-like syntax for handling asynchronous operations, making the code easier to read and write.
+
+
+
+async Function:
+The async keyword is used to define an asynchronous function. An async function always returns a Promise.
+
+await Operator:
+
+The await keyword is used inside an async function to pause execution until a Promise is resolved.
+It is used to handle the result of a Promise without using callbacks or chaining .then() methods.
+
 */
 
 

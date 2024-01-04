@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async/Await Functions</h1>
+</body>
+<script>
+// Define an asynchronous function named 'getData'
+async function getData() {
+  try {
+    // Use the fetch function to make an HTTP GET request to the provided URL
+    const response = await fetch('http://jsonplaceholder.typicode.com/users/1');
+    // console.log(response)
+    
+    // Check if the response is not OK;, it will throw an error
+    if (!response.ok) {
+      throw new Error('Request failed');
+    }
+    // Convert the response body to JSON format
+    const data = await response.json();
+
+    // Return the JSON data
+    return data;
+  } catch (error) {
+    // Handle any errors that occur during the fetching or processing the url
+    console.error('Error fetching data:', error);
+    throw error;
+  }
+}
+
+// Call the 'getData' function to handle the result using .then() and .catch()
+getData()
+  .then(data => {       // the keyword will handle the success response
+    console.log(data); // Log the retrieved data to the console
+  })
+  .catch(error => {   // Here the catch keyword will handle the error
+    console.error('Error:', error); // or Log any errors to the console
+  });
+</script>
+</html>

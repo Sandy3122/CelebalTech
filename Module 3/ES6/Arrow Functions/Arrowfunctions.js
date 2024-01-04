@@ -4,6 +4,24 @@ An arrow function expression is a compact alternative to a traditional function 
 Arrow functions don't have their own bindings to "this" keyword
 "(hashrocket) => "  is a shorthand notation for defining functions in JavaScript
 
+1. Arrow functions have a shorter syntax compared to traditional functions.
+Basic syntax: (parameters) => { statement }.
+
+2. If the function body contains a single statement, the curly braces and the return keyword can be omitted.
+Example: const add = (a, b) => a + b;
+
+3. Arrow functions do not bind their own this value. They inherit the this value from the enclosing execution context (lexical scoping).
+This can be advantageous in certain situations, especially in callback functions.
+
+4. Single Parameter Parentheses:
+If a function has only one parameter, the parentheses around the parameter can be omitted.
+Example: const square = x => x * x;
+
+5. Arrow functions are often more concise, making code more readable, especially for short functions or inline callbacks.
+
+6. Arrow functions do not have their own arguments object. They inherit it from the enclosing scope.
+
+7. Arrow functions are commonly used for short, simple functions, and especially in contexts where this binding and a more concise syntax are beneficial.
 
 */
 

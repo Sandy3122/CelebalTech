@@ -2,7 +2,7 @@ const session = require("express-session");
 const mongodbSession = require("connect-mongodb-session")(session);
 require("dotenv").config();
 
-const mongoUri = "mongodb://localhost:27017/sessions";
+const mongoUri = "mongodb://0.0.0.0:27017/sessions";
 
 // Create a MongoDB session store:
 const store = new mongodbSession({
